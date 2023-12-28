@@ -1,0 +1,17 @@
+<h2>Usted tiene el rol de admin y tiene permisos especiales</h2>
+<hr>
+{{>menu}}
+<hr>
+
+<p>Aquí se muestran los clientes de su página</p>
+
+<ul>
+    {{#each usuarios}}
+        <li>
+            <p>Nombre: {{this.nombre}}</p>
+            <p>Apellido: {{this.apellido}}</p>
+            <p>Edad: {{this.age}}</p>
+            <p>Correo Electrónico: <strong>{{this.email}}</strong></p>
+        </li>
+    {{/each}}
+</ul>

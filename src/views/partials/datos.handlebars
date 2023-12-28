@@ -1,0 +1,11 @@
+<ul class="datos">
+    {{#if rol}}
+        <p>Nombre: Admin</p>
+        <p>Email: adminCoder@coder.com</p>
+    {{else}}
+        <p>Nombre: {{usuario.nombre}}</p>
+        <p>Apellido: {{usuario.apellido}}</p>
+        <p>Edad: {{usuario.age}}</p>
+        <p>Correo Electrónico: <strong>{{usuario.email}}</strong></p>
+    {{/if}}
+</ul>
